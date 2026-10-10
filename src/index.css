@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: #141414;
+    background-color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Saans/Inter variable weight nuances matching DESIGN-mobbin.md */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 650;
+    letter-spacing: 0;
+  }
+
+  ::selection {
+    background-color: #f3f3f3;
+    color: #141414;
+  }
+}
+
+/* Custom squircle icon helper matching 30% iOS radius */
+.squircle-30 {
+  border-radius: 30%;
+}
+
+/* Hide scrollbar for clean marquee/tabs */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
